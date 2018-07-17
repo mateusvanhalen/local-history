@@ -6,7 +6,7 @@ HomeInventoryDatabase.electronics = []
 
 const vintageInkwell = {
     name: "Vintage Ink Well",
-    location: "Writing desk",
+    location: "Office",
     description: "I enjoy this inkwell because it belonged to my grandfather and holds enough ink to survive weeks of writing."
   }
 
@@ -27,10 +27,25 @@ const vintageInkwell = {
     location: "Bedroom",
     description: "Love this TV for watching football."
   }
+
+  const couch = {
+      name: "couch",
+      location: "Living Room",
+      description: "Nice new couch holds my butt while I watch TV or read"
+  }
+
+  const computer = {
+    name: "computer",
+    location: "Office",
+    description: "This helps me code things"
+  }
+
 HomeInventoryDatabase.crafts.push(vintageInkwell);
 HomeInventoryDatabase.furniture.push(writingDesk);
 HomeInventoryDatabase.electronics.push(tv);
 HomeInventoryDatabase.furniture.push(chair);
+HomeInventoryDatabase.furnitere.push(couch);
+HomeInventoryDatabase.electronics.push(computer);
 
 const saveDatabase = function (databaseObject, localStorageKey) {
     /*
